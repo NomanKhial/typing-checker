@@ -33,7 +33,7 @@ function check(e) {
   const drops = matrixContainer.querySelectorAll("div");
 
   drops.forEach((l) => {
-    if (l.textContent === pressedKey) {
+    if (l.textContent === pressedKey.toLowerCase()) {
       l.style.backgroundColor = "#0f0";
       l.style.color = "#fff";
       score += 1;

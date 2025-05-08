@@ -39,7 +39,7 @@ function check(e) {
       score += 1;
       localStorage.setItem("score", JSON.stringify(score));
       scoreContainer.textContent = score;
-      new Audio("./typing-checker/correct.mp3").play();
+      new Audio("/typing-checker/correct.mp3").play();
     }
   });
 }
